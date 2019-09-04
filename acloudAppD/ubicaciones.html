@@ -1,0 +1,313 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="es"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+		<title>Ubicaciones - Acloud</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+		<!--Boostsrap-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<!--Mis iconos-->
+		<link rel="stylesheet" href="css/icomoon.css" type="text/css">
+		<!-- font Awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<!-- bootstrap wysihtml5 - text editor -->
+		<!--link href="css/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css"-->
+		<!--Hovers-->
+		<link rel="stylesheet" href="css/hover-min.css" type="text/css" media="all">
+		<!-- Thema azul de acloud -->
+		<link rel="stylesheet" href="css/blueTheme.css" type="text/css">
+		<!-- Mis estilos -->
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<!-- Modernizr -->
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+
+	<body style="background:#f9f9f9;" class="skin-blue fixed">
+		<header class="header">
+				<a href="home.html" class="logo">
+					<i class="fa fa-cloud" style="font-size: 30px;"></i>
+					Acloud
+				</a>
+				<nav class="navbar navbar-static-top" role="navigation">
+					<a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<h3 class="sidebar-toggle bienvenido">Ubicaciones</h3>
+					<!--Menu del usuario-->
+					<ul class="nav navbar-nav-custom pull-right">
+						<!-- Dropdown  del usuario -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+								<img src="img/avatar.jpg" alt="avatar">
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right menuUsuario">
+								<li class="dropdown-header">
+									<h5 class="nombreUsuario">Danny Celis</h5>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-config pull-right"></i>
+										Administrar
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-empresas pull-right"></i>
+										Empresas
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-pass pull-right"></i>
+										Cambiar contraseña
+									</a>
+								</li>
+								<li class="divider"></li>
+									<li>
+										<a href="#">
+											<i class="icon-logout pull-right"></i>
+											Cerrar sesión
+										</a>
+									</li>
+							</ul>
+						</li>
+						<!-- fin Dropdown del usuario -->
+					</ul>
+				</nav>
+		</header>
+		<div class="wrapper row-offcanvas row-offcanvas-left">
+
+			<!-- aside para el arbol -->
+			<aside class="left-side sidebar-offcanvas">
+				<section class="sidebar" >
+					<ul class="sidebar-menu">
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+					</ul>
+				</section>
+			</aside>
+			<!-- fin aside para el arbol -->
+
+			<!-- aside para el contenido de la pagina -->
+			<aside class="right-side">
+				<!-- sección de la parte de arriba de los activos -->
+				<section class="content cabeza">
+					<div class="col-md-4 col-sm-4 col-md-4 col-xs-12">
+						<h3 class="centrarImagen">
+							<img class="fotoMaquina img-thumbnail" src="img/fotoUbicaciones.jpg" alt="Foto Maquina">
+						</h3>
+					</div>
+					<div class="col-mia col-lg-4 col-sm-4 col-md-4 col-xs-6 bajarUbicaciones">
+						<h3>Nombre de la ubicación</h3>
+						<h3>#0912372364628</h3>
+					</div>
+					<div class="col-mia col-lg-4 col-sm-4 col-md-4 col-xs-6 bajarUbicaciones">
+						<h3><a href="#" data-toggle="modal" data-target="#modalBtnDuenos">Dueños</a></h3>
+						<h3><a href="#" data-toggle="modal" data-target="#modalBtnResponsables">Responsables</a></h3>
+						<!-- Modal para el btn dueños -->
+						<div id="modalBtnDuenos" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header cabezaModal">
+											<button type="button" class="pull-right btn btn-sm btn-danger btn-aceptar" data-dismiss="modal" aria-label="Close">
+												<i class="icon-close"></i>
+											</button>
+											<h4 class="modal-title" id="gridModalLabel">Dueños</h4>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<!-- Tabla de dueños -->
+								                    			<table class="table table-bordered centrar">
+									                    			<tbody style="font-size: 16px">
+										                                          <tr>
+										                                          	<td>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+										                                          			<img class="img-thumbnail" src="img/fotoDueno2.jpg" alt="Foto Dueño">
+										                                          		</div>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+											                                          		<!-- Nombre -->
+											                                          		<h4>Ezio Auditore da Firenze</h4>
+											                                          		<div class="linea" ></div>
+											                                          		<!-- Cargo -->
+											                                          		<h4>Asesino</h4>
+											                                          		<!-- Correo -->
+											                                          		<h4><a>correo@correo.com</a></h4>
+											                                          		<!-- Tel -->
+											                                          		<h4>+55-555-5555</h4>
+										                                          		</div>
+										                                          	</td>
+										                                          </tr>
+										                                          <tr>
+										                                          	<td>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+										                                          			<img class="img-thumbnail" src="img/fotoDueno.jpg" alt="Foto Dueño">
+										                                          		</div>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+											                                          		<!-- Nombre -->
+											                                          		<h4>Connor Kenway</h4>
+											                                          		<div class="linea" ></div>
+											                                          		<!-- Cargo -->
+											                                          		<h4>Asesino</h4>
+											                                          		<!-- Correo -->
+											                                          		<h4><a>correo@correo.com</a></h4>
+											                                          		<!-- Tel -->
+											                                          		<h4>+55-555-5555</h4>
+										                                          		</div>
+										                                          	</td>
+										                                          </tr>
+									                                        </tbody>
+								                                        </table>
+								                                        <!-- fin tabla dueños -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+						<!-- Modal para el btn dueños -->
+						<div id="modalBtnResponsables" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header cabezaModal">
+											<button type="button" class="pull-right btn btn-sm btn-danger btn-aceptar" data-dismiss="modal" aria-label="Close">
+												<i class="icon-close"></i>
+											</button>
+											<h4 class="modal-title" id="">Responsables</h4>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<!-- Tabla de responsables -->
+								                    			<table class="table table-bordered centrar">
+									                    			<tbody style="font-size: 16px">
+										                                          <tr>
+										                                          	<td>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+										                                          			<img class="img-thumbnail" src="img/fotoDueno2.jpg" alt="Foto Dueño">
+										                                          		</div>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+											                                          		<!-- Nombre -->
+											                                          		<h4>Altaïr Ibn-La'Ahad</h4>
+											                                          		<div class="linea" ></div>
+											                                          		<!-- Cargo -->
+											                                          		<h4>Asesino</h4>
+											                                          		<!-- Correo -->
+											                                          		<h4><a>correo@correo.com</a></h4>
+											                                          		<!-- Tel -->
+											                                          		<h4>+55-555-5555</h4>
+										                                          		</div>
+										                                          	</td>
+										                                          </tr>
+										                                          <tr>
+										                                          	<td>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+										                                          			<img class="img-thumbnail" src="img/fotoDueno.jpg" alt="Foto Dueño">
+										                                          		</div>
+										                                          		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-duenos">
+											                                          		<!-- Nombre -->
+											                                          		<h4>Edward James Kenway</h4>
+											                                          		<div class="linea" ></div>
+											                                          		<!-- Cargo -->
+											                                          		<h4>Asesino</h4>
+											                                          		<!-- Correo -->
+											                                          		<h4><a>correo@correo.com</a></h4>
+											                                          		<!-- Tel -->
+											                                          		<h4>+55-555-5555</h4>
+										                                          		</div>
+										                                          	</td>
+										                                          </tr>
+									                                        </tbody>
+								                                        </table>
+								                                        <!-- fin tabla responsables -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</section>
+				<div class="linea" ></div>
+				<!-- sección de las categorias de los activos -->
+				<section class="content">
+						<!-- Tabla de subvariables -->
+	                    			<table class="table table-bordered table-striped centrar">
+		                    				<caption class="listaArchivos">Lista de archivos</caption>
+		                    			<tbody style="font-size: 16px">
+			                                          <tr>
+			                                          	<td>Nombre del archivo</td>
+			                                          	<td class="iconHistorico">
+			                                          		<a href="#">
+			                                          			<i class="icon-chartLine img-thumbnail"></i>
+			                                          		</a>
+			                                          	</td>
+			                                          </tr>
+			                                          <tr>
+			                                          	<td>Nombre del archivo</td>
+			                                          	<td class="iconHistorico">
+			                                          		<a href="#">
+			                                          			<i class="icon-chartLine img-thumbnail"></i>
+			                                          		</a>
+			                                          	</td>
+			                                          </tr>
+			                                          <tr>
+			                                          	<td>Nombre del archivo</td>
+			                                          	<td class="iconHistorico">
+			                                          		<a href="#">
+			                                          			<i class="icon-chartLine img-thumbnail"></i>
+			                                          		</a>
+			                                          	</td>
+			                                          </tr>
+			                                          <tr>
+			                                          	<td>Nombre del archivo</td>
+			                                          	<td class="iconHistorico">
+			                                          		<a href="#">
+			                                          			<i class="icon-chartLine img-thumbnail"></i>
+			                                          		</a>
+			                                          	</td>
+			                                          </tr>
+		                                        </tbody>
+	                                        </table>
+	                                        <!-- fin tabla subV -->
+				</section>
+			</aside>
+			<!-- fin del contenido del aside -->
+
+		</div>
+
+		<!-- jQuery -->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap -->
+		<script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- Morris.js charts -->
+		<!--script src="js/plugins/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script-->
+
+		<!-- App plugin -->
+		<script src="js/plugins/app.js" type="text/javascript"></script>
+
+		<!-- dashboard demo -->
+		<!--script src="js/plugins/dashboard.js" type="text/javascript"></script-->
+
+		<!-- demo purposes -->
+		<!--script src="js/plugins/demo.js" type="text/javascript"></script-->
+
+		<!-- mi js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

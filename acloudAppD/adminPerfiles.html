@@ -1,0 +1,622 @@
+<!doctype html>
+<!--[if lt IE 7]>	 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>		 <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+
+<html class="no-js" lang="es"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+		<title>Admin. Perfiles - Acloud</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+		<!--Boostsrap-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<!--Mis iconos-->
+		<link rel="stylesheet" href="css/icomoon.css" type="text/css">
+		<!-- font Awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<!-- bootstrap wysihtml5 - text editor -->
+		<!--link href="css/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css"-->
+		<!--Hovers-->
+		<link rel="stylesheet" href="css/hover-min.css" type="text/css" media="all">
+		<!-- Para los sliders -->
+		<link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Thema azul de acloud -->
+		<link rel="stylesheet" href="css/blueTheme.css" type="text/css">
+		<!-- Mis estilos -->
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<!-- Modernizr -->
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+
+	<body style="background:#f9f9f9;" class="skin-blue fixed">
+		<header class="header">
+				<a href="home.html" class="logo">
+					<i class="fa fa-cloud" style="font-size: 30px;"></i>
+					Acloud
+				</a>
+				<nav class="navbar navbar-static-top" role="navigation">
+					<a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<h3 class="sidebar-toggle bienvenido">Admin. Perfiles</h3>
+					<!--Menu del usuario-->
+					<ul class="nav navbar-nav-custom pull-right">
+						<!-- Dropdown  del usuario -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+								<img src="img/avatar.jpg" alt="avatar">
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right menuUsuario">
+								<li class="dropdown-header">
+									<h5 class="nombreUsuario">Danny Celis</h5>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-config pull-right"></i>
+										Administrar
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-empresas pull-right"></i>
+										Empresas
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-pass pull-right"></i>
+										Cambiar contraseña
+									</a>
+								</li>
+								<li class="divider"></li>
+									<li>
+										<a href="#">
+											<i class="icon-logout pull-right"></i>
+											Cerrar sesión
+										</a>
+									</li>
+							</ul>
+						</li>
+						<!-- fin Dropdown del usuario -->
+					</ul>
+				</nav>
+		</header>
+		<div class="wrapper row-offcanvas row-offcanvas-left">
+
+			<!-- aside para el arbol -->
+			<aside class="left-side sidebar-offcanvas">
+				<section class="sidebar" >
+					<ul class="sidebar-menu">
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+						<!-- Acá va el menu del arbol -->
+					</ul>
+				</section>
+			</aside>
+
+			<!-- fin aside para el arbol -->
+
+			<!-- aside para el contenido de la pagina -->
+			<aside class="right-side">
+				<!-- sección de la parte de arriba de los activos -->
+				<section class="content cabeza centrar">
+					<div class="bajarPerfiles">
+						<div class="col-lg-1 col-md-1 col-sm-1"></div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 col-duenos">
+							<img class="img-thumbnail" src="img/fotoDueno2.jpg" alt="Foto del usuario">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 col-duenos">
+								<!-- Nombre -->
+								<h4>Ezio Auditore da Firenze</h4>
+								<div class="linea3" ></div>
+								<!-- Cargo -->
+								<h4>Asesino</h4>
+								<!-- Correo -->
+								<h4><a>correo@correo.com</a></h4>
+								<!-- Tel -->
+								<h4>+55-555-5555</h4>
+						</div>
+						<div class="col-lg-3 col-md-2 col-sm-2"></div>
+					</div>
+				</section>
+				<div class="linea"></div>
+				<section class="content">
+					<div class="panel-group" id="accordionperfiles" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading acordeonCategoria" role="tab" id="Perfilclick">
+								<h4 class="panel-title">
+									<a class="collapsed colapsarPerfiles" role="button" data-toggle="collapse" data-parent="#accordionperfiles" href="#perfil" aria-expanded="false" aria-controls="perfil">
+										Perfiles
+										<i class="icon-down pull-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="perfil" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Perfilclick">
+								<div class="anchoCaja eliminarMargen">
+									<div class="nav-tabs-custom">
+											<ul class="nav nav-tabs">
+												<li class="active primertab">
+													<a href="#tab_1" data-toggle="tab">Predefinidos</a>
+												</li>
+												<li class="primertab">
+													<a href="#tab_2" data-toggle="tab">Crear nuevo</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane active" id="tab_1">
+													<div class="ancho"></div>
+													<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 margenesRoles">
+														<ul class="margenPerfiles">
+															<li class="centrar">Asignados</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																<a href="#">
+																	Perfil 1
+																</a>
+																</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																<a href="#">
+																	Perfil 2
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+														<ul class="centrar margenflechasPerfiles bajarFlechasPerfiles">
+															<li class="btn btn-default btn-sm">
+																<i class="icon-right cambiarFlecha1" ></i>
+															</li>
+															<li class="btn btn-default btn-sm bajarFlechasPerfiles">
+																<i class="icon-left cambiarFlecha2" ></i>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 margenesRoles">
+														<ul class="margenPerfiles">
+															<li class="centrar">Por asignar</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																<a href="#">
+																	Perfil 1
+																</a>
+															</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																	<a href="#">
+																		Perfil 2
+																	</a>
+															</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																<a href="#">
+																	Perfil 3
+																</a>
+															</li>
+															<li class="perfiles">
+																<span class="pull-left">
+																	<input type="checkbox">
+																</span>
+																<a href="#">
+																	Perfil 4
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div style="clear: both"></div>
+												</div>
+												<div class="tab-pane" id="tab_2">
+													<div class="input-group">
+														<input class="form-control" placeholder="Nombre del nuevo perfil">
+															<div class="input-group-btn">
+																<button class="btn btn-success">
+																	<i class="icon-mas"></i>
+																</button>
+															</div>
+													</div>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- slider para los iconos -->
+						<h4 class="text-center">Grupos</h4>
+					<div class="owl-carousel owl-theme sliderAdmin">
+						<!-- adelante -->
+						<div class="btn btn-primary btn-sm adelante flechaslider">
+							<i class="icon-right"></i>
+						</div>
+						<!-- atras -->
+						<div class="btn btn-primary btn-sm atras flechaslider">
+							<i class="icon-left"></i>
+						</div>
+
+						<div class="owl-wrapper-outer mascaraSlider">
+							<div class="owl-wrapper contenedorSlider">
+								<!-- item #1 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-vibracion" ></i>
+													<h5>Vibración</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #1 -->
+								<!-- item #2 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-lubricacion" ></i>
+													<h5>Lubricación</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #2 -->
+								<!-- item #3 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-temperatura" ></i>
+													<h5>Temperatura</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #3 -->
+								<!-- item #4 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-termografia" ></i>
+													<h5>Termografía</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #4 -->
+								<!-- item #5 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-visual" ></i>
+													<h5>Inspec. visuales</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #5 -->
+								<!-- item #1 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-vibracion" ></i>
+													<h5>Vibración</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #1 -->
+								<!-- item #2 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-lubricacion" ></i>
+													<h5>Lubricación</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #2 -->
+								<!-- item #3 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-temperatura" ></i>
+													<h5>Temperatura</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #3 -->
+								<!-- item #4 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-termografia" ></i>
+													<h5>Termografía</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #4 -->
+								<!-- item #5 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-visual" ></i>
+													<h5>Inspec. visuales</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #5 -->
+							</div>
+						</div>
+					</div>
+					<!--fin slider para los iconos -->
+
+					<!-- slider para los iconos -->
+						<h4 class="text-center">Categorías</h4>
+					<div class="owl-carousel owl-theme sliderAdmin">
+						<!-- adelante -->
+						<div class="btn btn-primary btn-sm adelante flechaslider">
+							<i class="icon-right"></i>
+						</div>
+						<!-- atras -->
+						<div class="btn btn-primary btn-sm atras flechaslider">
+							<i class="icon-left"></i>
+						</div>
+
+						<div class="owl-wrapper-outer mascaraSlider">
+							<div class="owl-wrapper contenedorSlider">
+								<!-- item #1 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-vibracion" ></i>
+													<h5>Vibración</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #1 -->
+								<!-- item #2 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-lubricacion" ></i>
+													<h5>Lubricación</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #2 -->
+								<!-- item #3 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-temperatura" ></i>
+													<h5>Temperatura</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #3 -->
+								<!-- item #4 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-termografia" ></i>
+													<h5>Termografía</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #4 -->
+								<!-- item #5 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-visual" ></i>
+													<h5>Inspec. visuales</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #5 -->
+								<!-- item #1 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-vibracion" ></i>
+													<h5>Vibración</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #1 -->
+								<!-- item #2 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-lubricacion" ></i>
+													<h5>Lubricación</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #2 -->
+								<!-- item #3 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-temperatura" ></i>
+													<h5>Temperatura</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #3 -->
+								<!-- item #4 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-termografia" ></i>
+													<h5>Termografía</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #4 -->
+								<!-- item #5 -->
+								<div class="owl-item elemento">
+									<div class="item panel misBordes">
+											<div class="anchoCaja text-center">
+													<i class="icon-visual" ></i>
+													<h5>Inspec. visuales</h5>
+											</div>
+									</div>
+								</div>
+								<!--/ item #5 -->
+							</div>
+						</div>
+					</div>
+					<!--fin slider para los iconos -->
+					<br><br>
+
+					<!-- tabla para el arbol -->
+					<div class="row">
+			                        <div class="col-xs-12">
+			                            <div class="box">
+			                                <div class="box-header">
+			                                    <div class="box-tools">
+			                                        <div class="input-group">
+			                                            <input type="text" name="table_search" class="form-control" placeholder="Buscar..."/>
+			                                            <div class="input-group-btn">
+			                                                <button class="btn btn-primary"><i class="icon-buscar"></i></button>
+			                                            </div>
+			                                        </div>
+			                                    </div>
+			                                </div><!-- /.box-header -->
+			                                <div class="box-body table-responsive no-padding">
+			                                    <table class="table table-bordered text-center">
+			                                        <tr>
+			                                            <th scope="rowgroup" rowspan="5">Arbol</th>
+			                                            <th>Nombre</th>
+			                                            <th>Tipo</th>
+			                                            <th style="width: 25%">Permisos</th>
+			                                        </tr>
+			                                        <tr>
+			                                            <td>Motor 1</td>
+			                                            <td>Activo</td>
+			                                            <td>
+			                                            	<button  class="btn btn-default btn-sm selector">
+										<i class="icon-ver"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-mas"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-editar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-insentar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-eliminar"></i>
+									</button>
+			                                            </td>
+			                                        </tr>
+			                                        <tr>
+			                                            <td>Casa 1</td>
+			                                            <td>Ubicación</td>
+			                                            <td>
+			                                            	<button  class="btn btn-default btn-sm selector">
+										<i class="icon-ver"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-mas"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-editar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-insentar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-eliminar"></i>
+									</button>
+			                                            </td>
+			                                        </tr>
+			                                        <tr>
+			                                            <td>Temperatura</td>
+			                                            <td>Variable</td>
+			                                            <td>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-ver"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-mas"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-editar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-insentar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-eliminar"></i>
+									</button>
+			                                            </td>
+			                                        </tr>
+			                                        <tr>
+			                                            <td>Motor 4</td>
+			                                            <td>Activo</td>
+			                                            <td>
+			                                            	<button  class="btn btn-default btn-sm selector">
+										<i class="icon-ver"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-mas"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-editar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-insentar"></i>
+									</button>
+									<button  class="btn btn-default btn-sm selector">
+										<i class="icon-eliminar"></i>
+									</button>
+			                                            </td>
+			                                        </tr>
+			                                    </table>
+			                                </div><!-- /.box-body -->
+			                            </div><!-- /.box -->
+			                        </div>
+			                </div>
+					<!-- fin tabla para el arbol -->
+				</section>
+			</aside>
+			<!-- fin del contenido del aside -->
+		</div>
+		<!-- ul>li*3>{item $} -->
+
+		<!-- jQuery -->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap -->
+		<script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- Morris.js charts -->
+		<!--script src="js/plugins/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script-->
+
+		<!-- App plugin -->
+		<script src="js/plugins/app.js" type="text/javascript"></script>
+
+		<!-- dashboard demo -->
+		<!--script src="js/plugins/dashboard.js" type="text/javascript"></script-->
+
+		<!-- demo purposes -->
+		<!--script src="js/plugins/demo.js" type="text/javascript"></script-->
+
+		<!-- mi js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

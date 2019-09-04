@@ -1,0 +1,172 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('..//fonts/icomoon.eot?-oph7me');
+	src:url('..//fonts/icomoon.eot?#iefix-oph7me') format('embedded-opentype'),
+		url('..//fonts/icomoon.ttf?-oph7me') format('truetype'),
+		url('..//fonts/icomoon.woff?-oph7me') format('woff'),
+		url('..//fonts/icomoon.svg?-oph7me#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ver:before {
+	content: "\e62c";
+}
+.icon-logo:before {
+	content: "\e617";
+}
+.icon-activo:before {
+	content: "\e600";
+}
+.icon-ubicacionweb:before {
+	content: "\e626";
+}
+.icon-ubicacionArbol:before {
+	content: "\e625";
+}
+.icon-user:before {
+	content: "\e628";
+}
+.icon-lock:before {
+	content: "\e616";
+}
+.icon-chartBar:before {
+	content: "\e604";
+}
+.icon-chartCir:before {
+	content: "\e605";
+}
+.icon-chartLine:before {
+	content: "\e606";
+}
+.icon-mas:before {
+	content: "\e61a";
+}
+.icon-circle:before {
+	content: "\e607";
+}
+.icon-close:before {
+	content: "\e608";
+}
+.icon-comentarios:before {
+	content: "\e609";
+}
+.icon-compartir:before {
+	content: "\e60a";
+}
+.icon-up:before {
+	content: "\e627";
+}
+.icon-down:before {
+	content: "\e60d";
+}
+.icon-left:before {
+	content: "\e614";
+}
+.icon-right:before {
+	content: "\e620";
+}
+.icon-left2:before {
+	content: "\e615";
+}
+.icon-right2:before {
+	content: "\e621";
+}
+.icon-file:before {
+	content: "\e612";
+}
+.icon-editar:before {
+	content: "\e60e";
+}
+.icon-eliminar:before {
+	content: "\e60f";
+}
+.icon-descargar:before {
+	content: "\e62e";
+}
+.icon-cargar:before {
+	content: "\e62f";
+}
+.icon-insentar:before {
+	content: "\e630";
+}
+.icon-engrane:before {
+	content: "\e611";
+}
+.icon-noti:before {
+	content: "\e61b";
+}
+.icon-refresh:before {
+	content: "\e61f";
+}
+.icon-buscar:before {
+	content: "\e603";
+}
+.icon-xls:before {
+	content: "\e62d";
+}
+.icon-ppt:before {
+	content: "\e61e";
+}
+.icon-pdf:before {
+	content: "\e61d";
+}
+.icon-txt:before {
+	content: "\e624";
+}
+.icon-audio2:before {
+	content: "\e602";
+}
+.icon-doc:before {
+	content: "\e60c";
+}
+.icon-audio:before {
+	content: "\e601";
+}
+.icon-imagen:before {
+	content: "\e613";
+}
+.icon-video:before {
+	content: "\e62a";
+}
+.icon-vibracion:before {
+	content: "\e629";
+}
+.icon-termografia:before {
+	content: "\e623";
+}
+.icon-visual:before {
+	content: "\e62b";
+}
+.icon-temperatura:before {
+	content: "\e622";
+}
+.icon-lubricacion:before {
+	content: "\e619";
+}
+.icon-config:before {
+	content: "\e60b";
+}
+.icon-empresas:before {
+	content: "\e610";
+}
+.icon-pass:before {
+	content: "\e61c";
+}
+.icon-logout:before {
+	content: "\e618";
+}
