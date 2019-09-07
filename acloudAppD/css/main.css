@@ -1,724 +1,858 @@
 /* ==========================================================================
    Estilos personalizados acloud
-   ========================================================================== */
-
+   @mixin ========================================================================= */
 /*Fuentes*/
-@font-face{
-	font-family: "Lato Black";
-	src:url(../fonts/lato/lato-black.ttf);
+@font-face {
+  font-family: "Lato Black";
+  src: url(../fonts/lato/lato-black.ttf);
 }
 
-@font-face{
-	font-family: "Lato Bold";
-	src:url(../fonts/lato/lato-bold.ttf);
+@font-face {
+  font-family: "Lato Bold";
+  src: url(../fonts/lato/lato-bold.ttf);
 }
 
-@font-face{
-	font-family: "Lato Bold Italic";
-	src:url(../fonts/lato/lato-bolditalic.ttf);
+@font-face {
+  font-family: "Lato Bold Italic";
+  src: url(../fonts/lato/lato-bolditalic.ttf);
 }
 
-@font-face{
-	font-family: "Lato Italic";
-	src:url(../fonts/lato/lato-italic.ttf);
+@font-face {
+  font-family: "Lato Italic";
+  src: url(../fonts/lato/lato-italic.ttf);
 }
 
-@font-face{
-	font-family: "Lato Light";
-	src:url(../fonts/lato/lato-light.ttf);
+@font-face {
+  font-family: "Lato Light";
+  src: url(../fonts/lato/lato-light.ttf);
 }
 
-@font-face{
-	font-family: "Lato Regular";
-	src:url(../fonts/lato/lato-regular.ttf);
+@font-face {
+  font-family: "Lato Regular";
+  src: url(../fonts/lato/lato-regular.ttf);
 }
 
 /*estilos para los scrollbars*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
 }
-::-webkit-scrollbar-button{
+
+::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-::-webkit-scrollbar-thumb{
-  background: -webkit-linear-gradient(top, rgb(181, 219, 231), rgb(181, 219, 231));
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(top, #b5dbe7, #b5dbe7);
   border-radius: 0px;
 }
-::-webkit-scrollbar-thumb:hover{
-    background: -webkit-linear-gradient(top, rgb(115, 172, 205), rgb(115, 172, 205));
-}
-/*Pseudo-clase*/
-::-webkit-scrollbar-thumb:window-inactive {
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-linear-gradient(top, #73accd, #73accd);
 }
 
-*{
-	list-style: none;
-	border: none;
-	margin: 0 auto;
-	padding: 0;
-	text-decoration: none;
-	font-family: "Lato Regular";
-	outline: 0 !important;
+* {
+  list-style: none;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Lato Regular";
+  outline: 0 !important;
 }
 
-i{
-	font-size: 16px;
+i {
+  font-size: 16px;
 }
 
-/*Estilos del login*/
-.logoAcloud{
-	height: 120px;
-  	text-align: center;
-  	color: #3C8DBC;
-  	font-size: 200px;
+body {
+  background: #f9f9f9;
 }
-.cajaIniSesion{
-	width: 360px;
-	height: 280px;
-	background: #dfdfdf;
-	margin:0 auto;
-	margin-top: 200px;
-	border-radius: 5px;
-}
-.formulario{
-	overflow: auto;
-}
-.formulario input[type="text"],input[type="password"]{
-	width: 100%;
-	height: 45px;
-	border-radius: 5px;
-	padding-left: 10px;
-	font-family: "Lato Regular";
-	color: #323232;
-	font-size: 18px;
-	border:solid 2px #ccc;
-}
-.formulario input:focus{
-	border: solid 2px #3C8DBC;
-	transition: all 0.2s ease;
-	box-shadow: none !important;
-	outline: 0;
-	color: #323232;
-}
-.contenidoFormulario{
-	position: relative;
-	width: 90%;
-	height: 40px;
-	margin-top: 25px;
-}
-.usuario{
-	position: absolute;
-}
-.clave{
-	position: absolute;
-}
-.recordar{
-	font-family: "Lato Regular";
-	width: 90%;
-	height: 5px;
-	font-size: 14px;
-	padding-left: 5px !important;
-}
-.icono{
-	position: absolute;
-	color: #a7b1b7;
-	font-size: 26px;
-	right: 13px;
-	top: 9px;
-}
-.btn-iniSesion{
-	font-size: 18px;
-	width: 100%;
-	height: 47px;
-}
-.ayuda{
-	font-family: "Lato Bold";
-	text-align: center;
-	font-size: 14px;
-	margin-top: 30px;
-}
-.ayuda a{
-	color: #7a7a7a;
-}
-.ayuda a:hover{
-	text-decoration: none;
-	color: #1d87e4;
-	transition:all 0.4s ease;
-}
-.amaq{
-	color: #1d87e4;
-	font-family: "Lato Black";
-	font-size: 12px;
-}
-.reservados{
-	font-family: "Lato Regular";
-	color:gray;
-	font-size: 12px;
-}
-.btn-aceptar{
-	font-family: "Lato Regular";
-	font-size: 16px;
-	float: right;
-	width: initial !important;
-}
-.cabezaModal{
-	background: #dfdfdf !important;
-	border-radius: 4px 4px 0px 0px;
-	font-family: "Lato Regular";
-	padding-bottom: 20px;
-}
-.cabezaModal h4{
-	margin-top: 5px;
-	font-size: 20px;
-}
-.pieModal{
-	background: #dfdfdf !important;
-	border-radius: 0px 0px 4px 4px;
-	font-family: "Lato Regular";
-}
-/*Fin de estilos login*/
 
-/*Inicio estilos contenido*/
-/*css para los activos*/
-.bienvenido{
-	margin-top: 1px !important;
-	color: white;
-	font-family: "Lato Regular";
-	font-size: 24px;
+.central {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
 }
-.avatar{
-	padding: 10px 10px 5px 12px !important;
 
+.loginBody {
+  background: transparent;
 }
-.avatar img{
-  	width: 40px;
-  	margin-top: -5px;
-  	border: 2px solid white;
-  	border-radius: 40px;
+
+.cajaIniSesion {
+  width: 360px;
+  background: #dfdfdf;
+  margin: 0 auto;
+  border-radius: 5px;
 }
-.dropdown-header{
-	background: #ebeef2 !important;
+
+.formulario {
+  overflow: auto;
 }
-.nombreUsuario{
-	color: #384349;
-	font-family: "Lato Bold";
+
+.formulario input[type="text"], .formulario input[type="password"] {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Lato Regular";
+  color: #323232;
+  font-size: 18px;
 }
-.menuUsuario{
-	min-width: 190px;
-	font-family: "Lato Regular";
+
+.formulario input:focus {
+  border: solid 2px #3C8DBC;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0;
+  color: #323232;
 }
-.menuUsuario > li > a{
-	padding: 8px 16px;
+
+.contenidoFormulario {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  margin-top: 25px;
 }
-.menuUsuario > li > a:hover{
-	color: white !important;
+
+.usuario {
+  position: absolute;
 }
-.menuUsuario > li > a > i{
-	padding: 2px -2px;
-	font-size: 18px;
+
+.clave {
+  position: absolute;
 }
-.tablaActivo{
-	margin-left: 0px;
+
+.recordar {
+  font-family: "Lato Regular";
+  width: 90%;
+  height: 5px;
+  font-size: 14px;
+  padding-left: 5px !important;
+}
+
+.icono {
+  position: absolute;
+  color: #a7b1b7;
+  font-size: 26px;
+  right: 13px;
+  top: 9px;
+}
+
+.btn-iniSesion {
+  font-size: 18px;
+  width: 100%;
+  height: 47px;
+}
+
+.ayuda {
+  font-family: "Lato Bold";
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.ayuda a {
+  color: #7a7a7a;
+}
+
+.ayuda a:hover {
+  text-decoration: none;
+  color: #1d87e4;
+}
+
+.amaq {
+  color: #1d87e4;
+  font-family: "Lato Black";
+  font-size: 12px;
+}
+
+.reservados {
+  font-family: "Lato Regular";
+  font-size: 12px;
+}
+
+.btn-aceptar {
+  font-family: "Lato Regular";
+  font-size: 16px;
+  float: right;
+  width: initial !important;
+}
+
+.cabezaModal {
+  background: #dfdfdf !important;
+  border-radius: 4px 4px 0px 0px;
+  font-family: "Lato Regular";
+  padding-bottom: 20px;
+}
+
+.cabezaModal h4 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.pieModal {
+  background: #dfdfdf !important;
+  border-radius: 0px 0px 4px 4px;
+  font-family: "Lato Regular";
+}
+
+.fecha {
+  color: gray;
+  font-family: Lato Regular;
+}
+
+.bienvenido {
+  margin-top: 1px !important;
+  color: white;
+  font-family: "Lato Regular";
+  font-size: 24px;
+}
+
+.avatar {
+  padding: 10px 10px 5px 12px !important;
+}
+
+.avatar img {
+  width: 40px;
+  margin-top: -5px;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+
+.logo i {
+  font-size: 30px;
+}
+
+.titulo {
+  font-size: 1em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.dropdown-header {
+  background: #ebeef2 !important;
+}
+
+.nombreUsuario {
+  color: #384349;
+  font-family: "Lato Bold";
+}
+
+.menuUsuario {
+  min-width: 190px;
+  font-family: "Lato Regular";
+}
+
+.menuUsuario > li > a {
+  padding: 8px 16px;
+}
+
+.menuUsuario > li > a:hover {
+  color: white !important;
+}
+
+.menuUsuario > li > a > i {
+  padding: 2px -2px;
+  font-size: 18px;
+}
+
+.tablaActivo {
+  margin-left: 0px;
 }
 
 /*Estados para los activos*/
-.estadoNeutro{
-	color: white;
-	text-align: center;
+.estadoNeutro {
+  color: white;
+  text-align: center;
 }
-.estadoBien{
-	color: #00a65a;
-	font-size: 20px;
-	text-align: center;
+
+.estadoBien {
+  color: #00a65a;
+  font-size: 20px;
+  text-align: center;
 }
-.estadoMal{
-	color: #f56954;
-	font-size: 20px;
-	text-align: center;
+
+.estadoMal {
+  color: #f56954;
+  font-size: 20px;
+  text-align: center;
 }
-.estadoMedio{
-	color: #f39c12;
-	font-size: 20px;
-	text-align: center;
+
+.estadoMedio {
+  color: #f39c12;
+  font-size: 20px;
+  text-align: center;
 }
-.estadoNormal{
-	color: #0073b7;
-	font-size: 20px;
-	text-align: center;
+
+.estadoNormal {
+  color: #0073b7;
+  font-size: 20px;
+  text-align: center;
 }
+
 /*fin estados para los activos*/
+.buscador {
+  padding: 5px;
+}
 
-.buscador{
-	padding: 5px;
+.iconBuscar {
+  font-size: 14px;
 }
-.iconBuscar{
-	font-size: 14px;
-}
+
 /*sirve para centrar una imagen o un modulo que este dentro de un h*/
-.centrar{
-	text-align: center !important;
+.centrar {
+  text-align: center !important;
 }
-.justificar{
-	text-align: justify;
-	margin: 5px;
-}
-.iconoModulo{
-	font-size: 20px;
-	float: left;
-	margin: 10px -5px 0px 8px;
-}
-.notificacion{
-	font-size: 20px;
-}
-.cabeza{
-	background: white !important;
-}
-.centrarImagen{
-	text-align: center;
-}
-.fotoMaquina{
-	min-width: 215px;
-	min-height: 215px;
-}
-.btn-cabeza{
-	font-size: 20px;
-}
-.iconoArchivo{
-	font-size: 20px;
-}
-.bajarActivos{
-	padding-top:30px;
-}
-.bajarUbicaciones{
-	padding-top: 60px;
-}
-.col-mia h3{
-	text-align: center;
-}
-.col-mia button{
-	margin: 0 auto !important;
-	display: block;
-	width: 60%;
-}
-.cuerpoTabla{
-	min-height: 226px;
-}
-.variable{
-	padding-left: 21px;
-}
-.textoVariable{
-	font-size: 20px;
-}
-.subVariable{
-	text-align: center;
-}
-.iconHistorico{
-	text-align: center;
-}
-.iconHistorico i{
-	font-size: 22px;
-}
-.acordeonCategoria{
-	background-color: #3C8DBC !important;
-}
-.acordeonCategoria a{
-	display: block;
-	color: white;
-	font-size: 20px;
-}
-.acordeonCategoria a:hover{
-	color: white;
-}
-.acordeonCategoria a:focus{
-	color: white;
-}
-.iconoCategoria{
-	color: white;
-	font-size: 26px;
-	width: 24px;
-	margin-right: 5px;
-}
-.iconoComentario{
-	font-size: 18px;
-	margin-left: 15px;
-}
-.acordeonVariable a{
-	display: block;
-	color: #333;
-}
-.acordeonVariable a:hover{
-	color: #333;
-}
-.acordeonVariable a:focus{
-	color: #333;
-}
-.iconoValorSubvariable{
-	font-size: 22px;
-	text-align: center;
-}
-.col-mia2{
-	margin-bottom: 40px;
-	margin-top: -10px;
-}
-.bajarP{
-	margin-left: 5px;
-}
-.linea{
-	border-bottom: 1px solid #ddd;
-}
-.linea2{
-	border-bottom: 1px solid #ddd;
-}
-.linea3{
-	border-bottom: 1px solid #ddd;
-}
-.bajarIcon{
-	margin-top: 5px;
-}
-/* fin css para los activos*/
 
-/*css para las ubicaciones*/
-.listaArchivos{
-	text-align: center;
-	font-family: "Lato Regular";
-	margin-top: 0px !important;
-	width: 100%;
-	min-height: 40px;
-	background-color: #3C8DBC;
-	color: white;
-	padding: 6px;
-	font-size: 22px;
+.justificar {
+  text-align: justify;
+  margin: 5px;
 }
+
+.iconoModulo {
+  font-size: 20px;
+  float: left;
+  margin: 10px -5px 0px 8px;
+}
+
+.notificacion {
+  font-size: 20px;
+}
+
+.cabeza {
+  background: white !important;
+}
+
+.centrarImagen {
+  text-align: center;
+}
+
+.fotoMaquina {
+  min-width: 215px;
+  min-height: 215px;
+}
+
+.btn-cabeza {
+  font-size: 20px;
+}
+
+.iconoArchivo {
+  font-size: 20px;
+}
+
+.bajarActivos {
+  padding-top: 30px;
+}
+
+.bajarUbicaciones {
+  padding-top: 60px;
+}
+
+.col-mia h3 {
+  text-align: center;
+}
+
+.col-mia button {
+  margin: 0 auto !important;
+  display: block;
+  width: 60%;
+}
+
+.cuerpoTabla {
+  min-height: 226px;
+}
+
+.variable {
+  padding-left: 21px;
+}
+
+.textoVariable {
+  font-size: 20px;
+}
+
+.subVariable {
+  text-align: center;
+}
+
+.iconHistorico {
+  text-align: center;
+}
+
+.iconHistorico i {
+  font-size: 22px;
+}
+
+.acordeonCategoria {
+  background-color: #3C8DBC !important;
+}
+
+.acordeonCategoria a {
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+
+.acordeonCategoria a:hover {
+  color: white;
+}
+
+.acordeonCategoria a:focus {
+  color: white;
+}
+
+.iconoCategoria {
+  color: white;
+  font-size: 26px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+.iconoComentario {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.acordeonVariable a {
+  display: block;
+  color: #333;
+}
+
+.acordeonVariable a:hover {
+  color: #333;
+}
+
+.acordeonVariable a:focus {
+  color: #333;
+}
+
+.iconoValorSubvariable {
+  font-size: 22px;
+  text-align: center;
+}
+
+.col-mia2 {
+  margin-bottom: 40px;
+  margin-top: -10px;
+}
+
+.bajarP {
+  margin-left: 5px;
+}
+
+.linea {
+  border-bottom: 1px solid #ddd;
+}
+
+.linea2 {
+  border-bottom: 1px solid #ddd;
+}
+
+.linea3 {
+  border-bottom: 1px solid #ddd;
+}
+
+.bajarIcon {
+  margin-top: 5px;
+}
+
+.listaArchivos {
+  text-align: center;
+  font-family: "Lato Regular";
+  margin-top: 0px !important;
+  width: 100%;
+  min-height: 40px;
+  background-color: #3C8DBC;
+  color: white;
+  padding: 6px;
+  font-size: 22px;
+}
+
 /*Css rotorKit*/
-.nombreActivo{
-	background: white !important;
-  	min-height: 50px;
-  	padding: 0px;
-  	font-family: "Lato Regular";
-  	margin-top: -10px !important;
+.nombreActivo {
+  background: white !important;
+  background-min-height: 50px;
+  background-padding: 0px;
+  background-font-family: "Lato Regular";
+  background-margin-top: -10px !important;
 }
-.listaAdmin{
-	text-align: center;
-	font-family: "Lato Regular";
-	margin-top: 0px !important;
-	width: 100%;
-	min-height: 40px;
-	background-color: rgb(115, 172, 205);
-	color: white;
-	padding: 6px;
-	font-size: 22px;
+
+.listaAdmin {
+  text-align: center;
+  font-family: "Lato Regular";
+  margin-top: 0px !important;
+  width: 100%;
+  min-height: 40px;
+  background-color: #73accd;
+  color: white;
+  padding: 6px;
+  font-size: 22px;
 }
-.subActivo{
-	display: block;
-	padding: 6px 16px;
+
+.subActivo {
+  display: block;
+  padding: 6px 16px;
 }
-.anchoVars{
-	width: 50%;
+
+.anchoVars {
+  width: 50%;
 }
-.anchoVars2{
-	width: 100%;
+
+.anchoVars2 {
+  width: 100%;
 }
-.varAdmin{
-	width: 100%;
-	margin: 4px 0px;
-	font-size: 16px;
-	cursor: move;
+
+.varAdmin {
+  width: 100%;
+  margin: 4px 0px;
+  font-size: 16px;
+  cursor: move;
 }
-.scrollearSubactivos{
-	height: 152px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	display: block;
+
+.scrollearSubactivos {
+  height: 152px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
 }
-.scrollearSubactivo{
-	height: 200px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	display: block;
+
+.scrollearSubactivo {
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
 }
-.scrollearVariable{
-	height: 453px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	display: block;
+
+.scrollearVariable {
+  height: 453px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
 }
-.centrar2{
-		text-align: center;
-		padding-left: 5px !important;
-		padding-right: 5px !important;
-		width: 8%;
-		margin-top: 150px;
+
+.centrar2 {
+  text-align: center;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  width: 8%;
+  margin-top: 150px;
 }
-.bajarIcon{
-	margin-top: 2px;
+
+.bajarIcon {
+  margin-top: 2px;
 }
-.opacidad{
-	opacity: 0;
+
+.opacidad {
+  opacity: 0;
 }
+
 /*Fin de estilos rotorKit*/
+.eliminarMargen {
+  padding: 10px 0px 0px 0px;
+}
 
-/*Inicio de estilos admin perfiles*/
-.eliminarMargen{
-	padding: 10px 0px 0px 0px;
+.primertab a:hover {
+  color: #333;
+  border-bottom: 1px solid gray;
 }
-.primertab a{
+
+.margenesRoles {
+  border: 1px dashed rgba(144, 211, 240, 0.6);
+  padding: 10px 0;
 }
-.primertab a:hover{
-	color: #333;
-	border-bottom: 1px solid gray;
+
+.bajarPerfiles {
+  padding: 0px;
 }
-.margenesRoles{
-	border: 1px dashed rgba(144, 211, 240, 0.6);
-    	padding: 10px 0;
+
+.perfiles a {
+  display: block;
+  color: #333;
+  background: #e5e5e5;
+  padding: 10px 55px;
+  text-align: center;
+  margin: 6px 0px;
 }
-.bajarPerfiles{
-	padding: 0px;
+
+.perfiles a:hover {
+  background-color: #ddd;
 }
-.perfiles a{
-	display: block;
-	color: #333;
-	background: rgb(229, 229, 229);
-	padding: 10px 55px;
-	text-align: center;
-	margin: 6px 0px;
+
+.perfiles span {
+  padding: 10px;
 }
-.perfiles a:hover{
-	background-color: #ddd;
+
+.margenPerfiles {
+  margin: 0px 15px;
 }
-.perfiles span{
-	padding: 10px;
+
+.panel-group {
+  margin-bottom: 10px !important;
 }
-.margenPerfiles{
-	margin: 0px 15px;
+
+.nav-tabs-custom {
+  margin-bottom: 0px !important;
 }
-.panel-group{
-	margin-bottom: 10px !important;
+
+.bajarFlechasPerfiles {
+  margin-top: 25px;
 }
-.nav-tabs-custom{
-	margin-bottom: 0px !important;
+
+.quitarPa {
+  padding-right: 5px;
+  padding-left: 5px;
 }
-.bajarFlechasPerfiles{
-	margin-top: 25px;
+
+.sliderAdmin {
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  padding: 10px 0px;
+  background: rgba(212, 239, 250, 0.4);
+  border: 1px dashed rgba(144, 211, 240, 0.6);
 }
-.quitarPa{
-	padding-right: 5px;
-	padding-left: 5px;
+
+.contenedorSlider {
+  width: 2072px;
+  left: 0px;
+  display: block !important;
 }
-.sliderAdmin{
-	display: block;
-	opacity: 1;
-	overflow: hidden;
-	padding: 10px 0px;
-	background: rgba(212, 239, 250, 0.4);
-	border: 1px dashed rgba(144, 211, 240, 0.6);
+
+.elemento {
+  width: 120px;
 }
-.contenedorSlider{
-	width: 2072px;
-    	left: 0px;
-    	display: block !important;
-}
-.elemento{
-	width: 120px;
-}
+
 .semibold {
-    font-weight: 600;
-}
-.anchoCaja{
-	padding: 10px 0px 0px 0px;
-}
-.misBordes{
-	position: relative;
-    	border-radius: 6px;
-    	cursor: pointer;
-    	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: #ddd;
-	border: 3px solid #ddd;
-	transition: all 0.2s ease;
-}
-.misBordes i{
-	color: #444;
-	font-size: 4em;
-}
-.seleccionIcono{
-	border: 3px solid #3c8dbc !important;
-  	background: white;
-  	transition: all 0.2s ease;
-}
-.seleccionIcono h5{
-	font-weight: 600;
-}
-.ancho{
-	width: 4%;
-	height: 50px;
-	float: left;
-}
-.mascaraSlider{
-	width: 1080px !important;
-}
-.flechaslider{
-	position: absolute;
-	padding: 10px 5px;
-	top: 36px;
-	z-index: 1;
-}
-.atras{
-	left: 25px;
-}
-.adelante{
-	right: 25px;
-}
-.moduloExpandir{
-	padding: 8px 10px 5px 5px !important;
-}
-.tablaModulo tbody>tr>td{
-	vertical-align: baseline !important;
-	border: 0;
-	border-bottom: 1px solid #ddd !important;
-	padding: 6px 0px;
-}
-.noBordes{
-	margin-bottom: 10px !important;
-}
-.noBordes tbody>tr{
-	border-right: 1px solid #ddd;
-	border-left: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-
-}
-.noBordes tbody>tr>td{
-	border-top: 0;
-}
-.subirP{
-	padding-top: 0 !important;
-}
-/*Fin de estilos contenido*/
-
-/* Responsive
-Responsive
-Responsive */
-@media screen and (max-width: 767px){
-	.bajarActivos{
-		padding-top:0px;
-		padding-bottom: 20px;
-	}
-	.bajarUbicaciones{
-		padding-top: 0px;
-	}
-	.centrar2{
-		text-align: center;
-		padding-left:0px !important;
-		padding-right: 0px !important;
-		width: 100%;
-		margin-bottom: 15px;
-		margin-top: 0px;
-	}
-	.flechaB{
-		margin-right: 10px;
-		margin-bottom: 0px;
-	}
-	.bajarFlechasPerfiles{
-		margin-left: 10px;
-		margin-top: 0px;
-	}
-	.margenflechasPerfiles{
-		margin: 15px 0px;
-	}
-	.cambiarFlecha1:before{
-		content: "\e60d";
-	}
-	.cambiarFlecha2:before{
-
-		content: "\e627";
-	}
-	.ancho{
-		display: none;
-		width: 4%;
-		height: 50px;
-		float: left;
-	}
-	.quitarPa{
-		padding: 0px !important;
-	}
-	.tablaModulo tbody>tr>td{
-		padding: 6px 0px;
-	}
+  font-weight: 600;
 }
 
-/* Responsive
-Responsive
-Responsive */
-@media screen and (max-width: 480px){
-	.col-mia{
-		width: 100%;
-		padding: 0px 0px 20px 0px;
-	}
-	.bajarUbicaciones{
-		padding-bottom: 5px;
-	}
-	.col-mia2{
-		margin-left: 0px !important;
-		padding: 2px !important;
-	}
-	.bajarP{
-		margin-bottom: 8px;
-	}
-	.botonSubir{
-		float: left !important;
-		width: 53%;
-		padding: 4px;
-	}
-	.botonSubir i{
-		margin-left: 4px;
-	}
-	.botonBajar{
-		float: right !important;
-		width: 43%;
-		padding: 4px;
-	}
-	.botonBajar i{
-		margin-left: 0px;
-	}
-	.col-duenos{
-		width: 100%;
-		padding: 0px;
-	}
-	.listaAdmin{
-		font-size: 18px;
-	}
-	.centrar2{
-		text-align: center;
-		padding-left:0px !important;
-		padding-right: 0px !important;
-		margin-bottom: 15px;
-		margin-top: 0px;
-	}
-	.flechaB{
-		margin-right: 10px;
-		margin-bottom: 0px;
-	}
-	.linea3{
-		border-bottom: 1px dashed #ddd;
-	}
-	.bajarFlechasPerfiles{
-		margin-left: 10px;
-		margin-top: 0px;
-	}
-	.margenflechasPerfiles{
-		margin: 15px 0px;
-	}
-	.cambiarFlecha1:before{
-		content: "\e60d";
-	}
-	.cambiarFlecha2:before{
-		content: "\e627";
-	}
-	.tablaModulo tbody>tr>td{
-		padding: 6px 0px;
-	}
+.anchoCaja {
+  padding: 10px 0px 0px 0px;
 }
+
+.misBordes {
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #ddd;
+  border: 3px solid #ddd;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.misBordes i {
+  color: #444;
+  font-size: 4em;
+}
+
+.seleccionIcono {
+  border: 3px solid #3c8dbc !important;
+  border-background: white;
+  border-transition: all 0.2s ease;
+}
+
+.seleccionIcono h5 {
+  font-weight: 600;
+}
+
+.ancho {
+  width: 4%;
+  height: 50px;
+  float: left;
+}
+
+.mascaraSlider {
+  width: 1080px !important;
+}
+
+.flechaslider {
+  position: absolute;
+  padding: 10px 5px;
+  top: 36px;
+  z-index: 1;
+}
+
+.atras {
+  left: 25px;
+}
+
+.adelante {
+  right: 25px;
+}
+
+.moduloExpandir {
+  padding: 8px 10px 5px 5px !important;
+}
+
+.tablaModulo tbody > tr > td {
+  vertical-align: baseline !important;
+  border: 0;
+  border-bottom: 1px solid #ddd !important;
+  padding: 6px 0px;
+}
+
+.noBordes {
+  margin-bottom: 10px !important;
+}
+
+.noBordes tbody > tr {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.noBordes tbody > tr > td {
+  border-top: 0;
+}
+
+.subirP {
+  padding-top: 0 !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .bajarActivos {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .bajarUbicaciones {
+    padding-top: 0px;
+  }
+  .centrar2 {
+    text-align: center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  .flechaB {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .bajarFlechasPerfiles {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .margenflechasPerfiles {
+    margin: 15px 0px;
+  }
+  .cambiarFlecha1:before {
+    content: "\e60d";
+  }
+  .cambiarFlecha2:before {
+    content: "\e627";
+  }
+  .ancho {
+    display: none;
+    width: 4%;
+    height: 50px;
+    float: left;
+  }
+  .quitarPa {
+    padding: 0px !important;
+  }
+  .tablaModulo tbody > tr > td {
+    padding: 6px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-mia {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+  }
+  .bajarUbicaciones {
+    padding-bottom: 5px;
+  }
+  .col-mia2 {
+    margin-left: 0px !important;
+    padding: 2px !important;
+  }
+  .bajarP {
+    margin-bottom: 8px;
+  }
+  .botonSubir {
+    float: left !important;
+    width: 53%;
+    padding: 4px;
+  }
+  .botonSubir i {
+    margin-left: 4px;
+  }
+  .botonBajar {
+    float: right !important;
+    width: 43%;
+    padding: 4px;
+  }
+  .botonBajar i {
+    margin-left: 0px;
+  }
+  .col-duenos {
+    width: 100%;
+    padding: 0px;
+  }
+  .listaAdmin {
+    font-size: 18px;
+  }
+  .centrar2 {
+    text-align: center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  .flechaB {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .linea3 {
+    border-bottom: 1px dashed #ddd;
+  }
+  .bajarFlechasPerfiles {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .margenflechasPerfiles {
+    margin: 15px 0px;
+  }
+  .cambiarFlecha1:before {
+    content: "\e60d";
+  }
+  .cambiarFlecha2:before {
+    content: "\e627";
+  }
+  .tablaModulo tbody > tr > td {
+    padding: 6px 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
