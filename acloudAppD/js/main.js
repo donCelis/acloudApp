@@ -4,31 +4,34 @@
 
  */
 $(document).ready(function() {
-  //Animación hover para los iconos del login
-  var iconos = document.querySelector(".icon-user");
-  var iconos2 = document.querySelector(".icon-lock");
+	//Animación hover para los iconos del login
+	const styleA = {
+		color: '#3C8DBC', transition: 'all 0.2s ease'
+	}
+	const styleD = {
+		color: '#a7b1b7', transition: 'all 0.2s ease'
+	}
+	$('.usuario').on({
+		focus: function(){
+			$(this).siblings().css(styleA);
+		},
+		blur: function(){
+			$(this).siblings().css(styleD);
+		}
+	});
 
-  function icono(num) {
-	 if (num == 1) {
-		iconos.style.color = "#3C8DBC";
-		iconos.style.transition = "all 0.2s ease";
-	 } else {
-		iconos2.style.color = "#3C8DBC";
-		iconos2.style.transition = "all 0.2s ease";
-	 }
-  }
-
-  function iconoC() {
-	 iconos.style.color = "#a7b1b7";
-	 iconos.style.transition = "all 0.2s ease";
-
-	 iconos2.style.color = "#a7b1b7";
-	 iconos2.style.transition = "all 0.2s ease";
-  }
+	$('.clave').on({
+		focus: function(){
+			$(this).siblings().css(styleA);
+		},
+		blur: function(){
+			$(this).siblings().css(styleD);
+		}
+	});
 
   /*codigo para el acordeon activos*/
-  var colapsar = $(".colapsar");
-  var cambiarIndicador = "";
+  let colapsar = $(".colapsar");
+  let cambiarIndicador = "";
 
   colapsar.click(function() {
 	 cambiarIndicador = $(this).children("i:last");
@@ -58,8 +61,8 @@ $(document).ready(function() {
   });
 
   //colapsar
-  var colapsarPerfiles = $(".colapsarPerfiles");
-  var cambiarIcon = "";
+  let colapsarPerfiles = $(".colapsarPerfiles");
+  let cambiarIcon = "";
 
   colapsarPerfiles.click(function() {
 	 cambiarIcon = $(this).children("i:last");
@@ -90,7 +93,7 @@ $(document).ready(function() {
 
   //evento de ocultar y mostrar los iconos de editar y eliminar
   $(".varAdmin").mouseenter(function() {
-	 var este = $(this)
+	 let este = $(this)
 		.find(".opacidad")
 		.animate(
 		  {
@@ -101,7 +104,7 @@ $(document).ready(function() {
   });
 
   $(".varAdmin").mouseleave(function() {
-	 var este = $(this)
+	 let este = $(this)
 		.find(".opacidad")
 		.animate(
 		  {
@@ -113,7 +116,7 @@ $(document).ready(function() {
 
   //seleccionar iconos del adminperfiles
   $(".misBordes").click(function() {
-	 var clase = $(this);
+	 let clase = $(this);
 	 $(this).css("border", "3px solid #3c8dbc");
 	 clase = clase[0].className;
 	 if (
@@ -134,11 +137,11 @@ $(document).ready(function() {
   });
 
   //script para el slider del amindPerfiles
-  var image = $(".elemento");
-  var ancho = image.length * 120 + image.length * 10;
-  var mover = 0;
+  let image = $(".elemento");
+  let ancho = image.length * 120 + image.length * 10;
+  let mover = 0;
   $(".contenedorSlider").css("width", ancho + "px");
-  var limite = $(".contenedorSlider").width() - 8 * 120;
+  let limite = $(".contenedorSlider").width() - 8 * 120;
   $(".adelante").click(function() {
 	 if (mover < limite) {
 		mover += 960;
@@ -157,7 +160,7 @@ $(document).ready(function() {
   });
   //seleccionar iconos
   $(".selector").click(function() {
-	 var permisoActivo = $(this);
+	 let permisoActivo = $(this);
 	 permisoActivo = permisoActivo[0].className;
 	 if (
 		permisoActivo == "btn btn-default btn-sm selector" ||

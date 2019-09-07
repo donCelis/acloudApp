@@ -40,8 +40,6 @@
 		<div class="formulario">
 			<div class="contenidoFormulario form-group">
 			<input
-				onFocus="icono(1)"
-				onBlur="iconoC()"
 				class="usuario"
 				type="text"
 				id="login-email"
@@ -53,8 +51,6 @@
 			</div>
 			<div class="contenidoFormulario form-group">
 			<input
-				onFocus="icono(2)"
-				onBlur="iconoC()"
 				class="clave"
 				type="password"
 				id="login-password"
@@ -163,15 +159,10 @@
 	</section>
 
     <!-- jQuery -->
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
-        );
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="js/vendor/bootstrap.min.js"></script>
     <!-- scripts personalizados -->
-    <script type="text/javascript" src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/main-dist.js"></script>
   </body>
 </html>
